@@ -71,7 +71,7 @@ Guidelines for your response:
 - If the query is outside your knowledge, reply with: "For this specific query, please contact the Insurance Claims Department."
 - Use simple language, especially for people unfamiliar with insurance terms.
 - End the response with a polite summary or tip if relevant.
-- Keep the length under 350 words unless needed.
+- Keep the length under 600 words unless needed.
 
 Respond now:
 """
