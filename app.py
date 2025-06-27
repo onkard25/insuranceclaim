@@ -52,23 +52,30 @@ if st.button("Get Assistance"):
     else:
         with st.spinner("Fetching response from Gemini Flash..."):
             try:
-                # Enhanced Prompt
+                # Enhanced Prompt for More Detailed Assistance
                 prompt = f"""
-You are a professional Insurance Claims Assistant for the BFSI sector.
+You are a highly knowledgeable and helpful Insurance Claims Assistant specializing in the BFSI sector.
 
-Reference Knowledge Base:
+Context:
 {knowledge_base}
 
-Now, answer the following customer query clearly, politely, and concisely:
+Now, assist the user with the following claim-related query in a clear, complete, and polite manner.
 
 User Query:
 {user_query}
 
-Guidelines:
-- Stick to factual information.
-- Structure the response (use bullets or numbered lists if needed).
-- If the query is out of scope or unclear, respond with: "For this specific query, please contact the Insurance Claims Department."
+Guidelines for your response:
+- Provide detailed and accurate information.
+- Break your answer into bullet points or numbered steps where applicable.
+- If the user asks a general or vague question, offer helpful clarifications or follow-up questions.
+- If the query is outside your knowledge, reply with: "For this specific query, please contact the Insurance Claims Department."
+- Use simple language, especially for people unfamiliar with insurance terms.
+- End the response with a polite summary or tip if relevant.
+- Keep the length under 350 words unless needed.
+
+Respond now:
 """
+
 
                 response = model.generate_content(prompt)
                 st.success("Response:")
