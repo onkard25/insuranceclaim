@@ -40,7 +40,7 @@ Respond politely. Keep your answers under 300 words. If unsure, suggest contacti
 # Streamlit UI setup
 st.set_page_config(page_title="Enhanced Insurance Claim Assistant", layout="centered")
 
-st.title("📄 Enhanced Insurance Claim Assistant (Powered by Gemini Flash)")
+st.title("📄 Enhanced Insurance Claim Assistant ")
 st.write("Ask your Insurance Claim-related queries below:")
 
 # User input
