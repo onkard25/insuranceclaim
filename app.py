@@ -53,7 +53,7 @@ if st.button("Get Assistance"):
         with st.spinner("Fetching response from Gemini Flash..."):
             try:
                 # Enhanced Prompt for More Detailed Assistance
-                prompt = prompt = f"""
+                prompt = f"""
 You are a highly professional and helpful Insurance Claim Support Assistant for the BFSI sector.
 
 Context:
